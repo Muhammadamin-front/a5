@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A5 — Dasturlash, prognozlash va rejalashtirish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress"><span id="progressBar"></span></div>
+
+  <main class="deck" id="deck">
+
+    <!-- 1. TITUL — Tubes cursor (Hero animate.md) -->
+    <section class="slide slide--hero" data-bg="tubes" data-title="Titul">
+      <canvas class="bg-canvas" id="tubesCanvas"></canvas>
+      <div class="hero-shade"></div>
+      <div class="content center">
+        <span class="eyebrow" data-anim style="--d:0">Mavzu A5 · Iqtisodiy siyosat</span>
+        <h1 class="hero-title">
+          <span class="roll" data-roll>Davlatning</span><br />
+          <span class="grad">ijtimoiy-iqtisodiy rivojlanishni</span>
+        </h1>
+        <p class="hero-sub" data-anim style="--d:6">
+          dasturlash, prognozlashtirish va rejalashtirish siyosati
+        </p>
+
+      </div>
+      <div class="hero-hint" data-anim style="--d:9">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l7 17 2-7 7-2z"/></svg>
+          Sichqonchani harakatlantiring · rangni o‘zgartirish uchun bosing
+        </div>
+    </section>
+
+    <!-- 2. REJA — FlowField (motion.md) -->
+    <section class="slide" data-bg="flow" data-flow="ocean" data-title="Reja">
+      <canvas class="bg-canvas"></canvas>
+      <div class="vignette"></div>
+      <div class="content">
+        <span class="eyebrow" data-anim style="--d:0">01 · Reja</span>
+        <h2 class="title" data-anim style="--d:1">Taqdimot rejasi</h2>
+        <ol class="plan">
+          <li data-anim style="--d:2"><b>01</b>Asosiy tushunchalar: prognoz, reja, dastur</li>
+          <li data-anim style="--d:3"><b>02</b>Ular o‘rtasidagi bog‘liqlik va tizim</li>
+          <li data-anim style="--d:4"><b>03</b>Prognozlar turlari va prognozlash usullari</li>
+          <li data-anim style="--d:5"><b>04</b>Direktiv va indikativ rejalashtirish</li>
+          <li data-anim style="--d:6"><b>05</b>Davlat dasturlari va ularning hayot sikli</li>
+          <li data-anim style="--d:7"><b>06</b>Xorijiy tajriba va O‘zbekiston amaliyoti</li>
+          <li data-anim style="--d:8"><b>07</b>Muammolar, takomillashtirish yo‘llari, xulosa</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3. TUSHUNCHALAR — Card Flip (flip-card.md) -->
+    <section class="slide" data-bg="flow" data-flow="aurora" data-title="Tushunchalar">
+      <canvas class="bg-canvas"></canvas>
+      <div class="vignette"></div>
+      <div class="content">
+        <span class="eyebrow" data-anim style="--d:0">02 · Asosiy tushunchalar</span>
+        <h2 class="title" data-anim style="--d:1">Uchta asosiy vosita</h2>
+        <p class="lead" data-anim style="--d:2">Kartochka ustiga olib boring yoki bosing — orqa tomonida ta’rif va belgilari.</p>
+        <div class="flip-row">
+          <div class="flip" data-anim style="--d:3" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="rings"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="flip__foot">
+                  <div><h3>Prognozlashtirish</h3><p>“Nima bo‘lishi mumkin?”</p></div>
+                  <span class="flip__icon">↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Prognozlashtirish</h3>
+                <p>Iqtisodiyot va jamiyatning kelajakdagi holatini ilmiy asoslangan holda oldindan baholash.</p>
+                <ul>
+                  <li>Ehtimoliy xarakterga ega</li>
+                  <li>Bir necha ssenariy (variant) beradi</li>
+                  <li>Rejalashtirishning boshlang‘ich bosqichi</li>
+                  <li>YaIM, inflyatsiya, bandlik ko‘rsatkichlari</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip" data-anim style="--d:4" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="rings rings--green"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="flip__foot">
+                  <div><h3>Rejalashtirish</h3><p>“Nimaga erishamiz?”</p></div>
+                  <span class="flip__icon">↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Rejalashtirish</h3>
+                <p>Maqsadlar, ularga erishish vositalari, muddatlari va resurslarini aniqlash jarayoni.</p>
+                <ul>
+                  <li>Aniq maqsad va ko‘rsatkichlar</li>
+                  <li>Resurslar balansi</li>
+                  <li>Direktiv yoki indikativ shaklda</li>
+                  <li>Byudjet bilan bog‘lanadi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="flip" data-anim style="--d:5" tabindex="0">
+            <div class="flip__inner">
+              <div class="flip__face flip__front">
+                <div class="rings rings--violet"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="flip__foot">
+                  <div><h3>Dasturlash</h3><p>“Qanday amalga oshiramiz?”</p></div>
+                  <span class="flip__icon">↻</span>
+                </div>
+              </div>
+              <div class="flip__face flip__back">
+                <h3>Dasturlash</h3>
+                <p>Muayyan muammoni hal etishga qaratilgan, resurs va ijrochilar bilan ta’minlangan chora-tadbirlar majmuini ishlab chiqish.</p>
+                <ul>
+                  <li>Maqsadli va kompleks yondashuv</li>
+                  <li>Ijrochi va mas’ullar belgilanadi</li>
+                  <li>Moliyalashtirish manbalari</li>
+                  <li>Monitoring va baholash</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TIZIM — Kinetic Grid (prompt (1).md) -->
+    <section class="slide" data-bg="kgrid" data-title="Tizim">
+      <canvas class="bg-canvas"></canvas>
+      <div class="content">
+        <span class="eyebrow" data-anim style="--d:0">03 · O‘zaro bog‘liqlik</span>
+        <h2 class="title" data-anim style="--d:1">Prognozdan natijagacha</h2>
+        <p class="lead" data-anim style="--d:2">Davlat boshqaruvida bu vositalar bitta uzluksiz zanjirni tashkil etadi.</p>
+        <div class="chain">
+          <div class="chain__node" data-anim style="--d:3"><span>1</span><b>Prognoz</b><small>Kelajak ssenariylari</small></div>
+          <div class="chain__arrow" data-anim style="--d:4"></div>
+          <div class="chain__node" data-anim style="--d:5"><span>2</span><b>Strategiya</b><small>Uzoq muddatli maqsadlar</small></div>
+          <div class="chain__arrow" data-anim style="--d:6"></div>
+          <div class="chain__node" data-anim style="--d:7"><span>3</span><b>Dastur</b><small>Chora-tadbirlar majmui</small></div>
+          <div class="chain__arrow" data-anim style="--d:8"></div>
+          <div class="chain__node" data-anim style="--d:9"><span>4</span><b>Reja va byudjet</b><small>Resurs va muddatlar</small></div>
+          <div class="chain__arrow" data-anim style="--d:10"></div>
+          <div class="chain__node" data-anim style="--d:11"><span>5</span><b>Monitoring</b><small>Natijani baholash</small></div>
+        </div>
+        <p class="note" data-anim style="--d:12">Monitoring natijalari keyingi prognozga qaytadi — tizim yopiq sikl bo‘yicha ishlaydi.</p>
+      </div>
+    </section>
+
+    <!-- 5. PROGNOZ TURLARI — FlowField ember -->
+    <section class="slide" data-bg="flow" data-flow="ember" data-title="Prognoz turlari">
+      <canvas class="bg-canvas"></canvas>
+      <div class="vignette"></div>
+      <div class="content">
+        <span class="eyebrow" data-anim style="--d:0">04 · Prognozlar turlari</span>
+        <h2 class="title" data-anim style="--d:1">Muddat bo‘yicha prognozlar</h2>
+        <div class="horizon">
+          <div class="horizon__row" data-anim style="--d:2">
+            <div class="horizon__label"><b>Qisqa muddatli</b><small>1 yilgacha</small></div>
+            <div class="horizon__bar"><span style="--w:12%"></span></div>
+            <p>Joriy byudjet, inflyatsiya, narxlar va bandlik bo‘yicha operativ qarorlar</p>
+          </div>
+          <div class="horizon__row" data-anim style="--d:3">
+            <div class="horizon__label"><b>O‘rta muddatli</b><small>3–5 yil</small></div>
+            <div class="horizon__bar"><span style="--w:42%"></span></div>
+            <p>O‘rta muddatli byudjet ramkasi, tarmoq va hududiy dasturlar</p>
+          </div>
+          <div class="horizon__row" data-anim style="--d:4">
+            <div class="horizon__label"><b>Uzoq muddatli</b><small>10–20 yil va undan ortiq</small></div>
+            <div class="horizon__bar"><span style="--w:100%"></span></div>
+            <p>Strategiyalar, demografiya, energetika va infratuzilma yo‘nalishlari</p>
+          </div>
+        </div>
+        <div class="chips" data-anim style="--d:5">
+          <span>Qamrovi: makro · tarmoq · hududiy</span>
+          <span>Shakli: ssenariyli (pessimistik · bazaviy · optimistik)</span>
+          <span>Xarakteri: izlanuvchi · normativ</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. USULLAR -->
+    <section class="slide" data-bg="kgrid" data-title="Usullar">
+      <canvas class="bg-canvas"></canvas>
+      <div class="content">
+        <span class="eyebrow" data-anim style="--d:0">05 · Prognozlash usullari</span>
+        <h2 class="title" data-anim style="--d:1">Asosiy usullar</h2>
+        <div class="grid3">
+          <article class="tile" data-anim style="--d:2"><i>📈</i><h3>Ekstrapolyatsiya</h3><p>O‘tgan davr tendensiyalarini kelajakka davom ettirish.</p></article>
+          <article class="tile" data-anim style="--d:3"><i>🧠</i><h3>Ekspert baholash</h3><p>Mutaxassislar fikrini umumlashtirish (masalan, Delfi usuli).</p></article>
+          <article class="tile" data-anim style="--d:4"><i>∑</i><h3>Modellashtirish</h3><p>Iqtisodiy-matematik va ekonometrik modellar.</p></article>
+          <article class="tile" data-anim style="--d:5"><i>⚖️</i><h3>Balans usuli</h3><p>Resurslar va ehtiyojlarni o‘zaro muvofiqlashtirish.</p></article>
+          <article class="tile" data-anim style="--d:6"><i>📐</i><h3>Normativ usul</h3><p>Belgilangan me’yor va standartlarga tayanish.</p></article>
+          <article class="tile" data-anim style="--d:7"><i>🔀</i><h3>Ssenariy tahlili</h3><p>Bir nechta muqobil rivojlanish variantlarini solishtirish.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. DIREKTIV vs INDIKATIV -->
+    <section class="slide" data-bg="flow" data-flow="aurora" data-title="Rejalashtirish turlari">
+      <canvas class="bg-canvas"></canvas>
+      <div class="vignette"></div>
+      <div class="content">
+        <span class="eyebrow" data-anim style="--d:0">06 · Rejalashtirish turlari</span>
+        <h2 class="title" data-anim style="--d:1">Direktiv va indikativ</h2>
+        <div class="versus">
+          <div class="versus__col versus__col--a" data-anim="left" style="--d:2">
+            <h3>Direktiv rejalashtirish</h3>
+            <p class="versus__tag">Majburiy · markazlashgan</p>
+            <ul>
+              <li>Reja topshiriqlari bajarilishi shart</li>
+              <li>Ma’muriy-buyruqbozlik iqtisodiyotiga xos</li>
+              <li>Resurslar markazdan taqsimlanadi</li>
+              <li>Misol: sobiq SSSRdagi besh yillik rejalar (Gosplan)</li>
+            </ul>
+          </div>
+          <div class="versus__vs" data-anim="pop" style="--d:4">VS</div>
+          <div class="versus__col versus__col--b" data-anim="right" style="--d:3">
+            <h3>Indikativ rejalashtirish</h3>
+            <p class="versus__tag">Yo‘naltiruvchi · bozorga mos</p>
+            <ul>
+              <li>Davlat sektori uchun majburiy, xususiy sektor uchun tavsiyaviy</li>
+              <li>Soliq, kredit, investitsiya rag‘batlari orqali</li>
+              <li>Bozor iqtisodiyotida qo‘llaniladi</li>
+              <li>Misol: Fransiya, Yaponiya, Janubiy Koreya</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. DAVLAT DASTURLARI -->
+    <section class="slide" data-bg="kgrid" data-title="Davlat dasturlari">
+      <canvas class="bg-canvas"></canvas>
+      <div class="content two-col">
+        <div>
+          <span class="eyebrow" data-anim style="--d:0">07 · Davlat dasturlari</span>
+          <h2 class="title" data-anim style="--d:1">Dastur turlari</h2>
+          <ul class="bullets">
+            <li data-anim style="--d:2"><b>Maqsadli kompleks</b> — yirik muammoni hal etishga qaratilgan</li>
+            <li data-anim style="--d:3"><b>Tarmoq dasturlari</b> — energetika, qishloq xo‘jaligi, sanoat</li>
+            <li data-anim style="--d:4"><b>Hududiy dasturlar</b> — viloyat va tumanlarni rivojlantirish</li>
+            <li data-anim style="--d:5"><b>Ijtimoiy dasturlar</b> — ta’lim, sog‘liqni saqlash, bandlik</li>
+            <li data-anim style="--d:6"><b>Investitsiya dasturlari</b> — loyihalar va infratuzilma</li>
+          </ul>
+        </div>
+        <div class="cycle" data-anim="pop" style="--d:3">
+          <svg viewBox="0 0 400 400" class="cycle__svg">
+            <circle cx="200" cy="200" r="150" class="cycle__track" />
+            <circle cx="200" cy="200" r="150" class="cycle__run" />
+          </svg>
+          <div class="cycle__center"><b>Dastur</b><small>hayot sikli</small></div>
+          <span class="cycle__step" style="--a:0">Ishlab chiqish</span>
+          <span class="cycle__step" style="--a:1">Tasdiqlash</span>
+          <span class="cycle__step" style="--a:2">Moliyalashtirish</span>
+          <span class="cycle__step" style="--a:3">Amalga oshirish</span>
+          <span class="cycle__step" style="--a:4">Monitoring</span>
+          <span class="cycle__step" style="--a:5">Baholash</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. XORIJIY TAJRIBA — 3D Coverflow (prompt.md) -->
+    <section class="slide" data-bg="none" data-title="Xorijiy tajriba">
+      <div class="cf-ambient" id="cfAmbient"></div>
+      <div class="content center">
+        <span class="eyebrow eyebrow--lined" data-anim style="--d:0">08 · Xorijiy tajriba</span>
+        <div class="coverflow" id="coverflow" data-anim style="--d:1">
+          <div class="cf-stage"></div>
+          <div class="cf-nav">
+            <button class="cf-btn" data-cf="prev" aria-label="Oldingi">‹</button>
+            <div class="cf-dots"></div>
+            <button class="cf-btn" data-cf="next" aria-label="Keyingi">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. O‘ZBEKISTON -->
+    <section class="slide" data-bg="flow" data-flow="ocean" data-title="O‘zbekiston">
+      <canvas class="bg-canvas"></canvas>
+      <div class="vignette"></div>
+      <div class="content">
+        <span class="eyebrow" data-anim style="--d:0">09 · O‘zbekiston amaliyoti</span>
+        <h2 class="title" data-anim style="--d:1">Strategik hujjatlar tizimi</h2>
+        <div class="timeline">
+          <div class="timeline__line"></div>
+          <div class="tl" data-anim style="--d:2">
+            <span class="tl__year">2017–2021</span>
+            <h3>Harakatlar strategiyasi</h3>
+            <p>Beshta ustuvor yo‘nalish bo‘yicha rivojlanish strategiyasi va har yilgi davlat dasturlari.</p>
+          </div>
+          <div class="tl" data-anim style="--d:3">
+            <span class="tl__year">2022–2026</span>
+            <h3>Yangi O‘zbekiston taraqqiyot strategiyasi</h3>
+            <p>Yettita ustuvor yo‘nalish va 100 ta maqsad; har yili alohida davlat dasturi bilan amalga oshiriladi.</p>
+          </div>
+          <div class="tl" data-anim style="--d:4">
+            <span class="tl__year">2023 →</span>
+            <h3>“O‘zbekiston — 2030” strategiyasi</h3>
+            <p>Uzoq muddatli maqsadlar: aholi turmush darajasi, iqtisodiy o‘sish, ekologiya, davlat boshqaruvi.</p>
+          </div>
+          <div class="tl" data-anim style="--d:5">
+            <span class="tl__year">Har yili</span>
+            <h3>Prognoz va byudjet</h3>
+            <p>Makroiqtisodiy prognoz, o‘rta muddatli byudjet ramkasi, hududiy va investitsiya dasturlari.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. MUAMMOLAR VA YO‘LLAR -->
+    <section class="slide" data-bg="kgrid" data-title="Takomillashtirish">
+      <canvas class="bg-canvas"></canvas>
+      <div class="content two-col two-col--even">
+        <div class="panel panel--warn" data-anim="left" style="--d:1">
+          <span class="eyebrow">10 · Muammolar</span>
+          <h3>Mavjud muammolar</h3>
+          <ul>
+            <li>Statistik ma’lumotlar sifati va tezkorligi</li>
+            <li>Prognoz va byudjet o‘rtasidagi uzilishlar</li>
+            <li>Dasturlar sonining ko‘pligi, takrorlanishi</li>
+            <li>Natijaga yo‘naltirilgan baholashning sustligi</li>
+          </ul>
+        </div>
+        <div class="panel panel--ok" data-anim="right" style="--d:2">
+          <span class="eyebrow">11 · Yechimlar</span>
+          <h3>Takomillashtirish yo‘llari</h3>
+          <ul>
+            <li>Raqamli platformalar va katta ma’lumotlar tahlili</li>
+            <li>Dastur-maqsadli byudjetlashtirish (KPI asosida)</li>
+            <li>Mustaqil monitoring va ochiq hisobotlar</li>
+            <li>Jamoatchilik va biznes ishtirokini kengaytirish</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. XULOSA -->
+    <section class="slide slide--end" data-bg="flow" data-flow="aurora" data-title="Xulosa">
+      <canvas class="bg-canvas"></canvas>
+      <div class="vignette"></div>
+      <div class="content center">
+        <span class="eyebrow" data-anim style="--d:0">Xulosa</span>
+        <p class="quote" data-anim style="--d:1">
+          Prognoz <em>yo‘nalishni</em> ko‘rsatadi, reja <em>maqsadni</em> belgilaydi,
+          dastur esa uni <em>amalga</em> oshiradi.
+        </p>
+        <h2 class="thanks"><span class="roll" data-roll>E’tiboringiz uchun rahmat!</span></h2>
+        <button class="glow-btn" data-anim style="--d:4" onclick="document.dispatchEvent(new CustomEvent('deck:goto',{detail:0}))">
+          <span>Boshiga qaytish</span><span class="glow-btn__arrow">→</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="hud">
+    <button class="hud__btn" id="prevBtn" aria-label="Oldingi slayd">←</button>
+    <span class="hud__count"><b id="curNum">01</b> / <span id="totalNum">12</span></span>
+    <button class="hud__btn" id="nextBtn" aria-label="Keyingi slayd">→</button>
+    <button class="hud__btn" id="fsBtn" aria-label="To‘liq ekran" title="To‘liq ekran (F)">⛶</button>
+  </nav>
+  <div class="dots" id="dots"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
